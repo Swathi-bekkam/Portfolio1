@@ -1,0 +1,227 @@
+body{
+    margin:30px;
+    padding:0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(230, 203, 228);
+}
+
+
+/*.....*/
+section{
+    padding:40px;
+}
+h1{
+    font-size:50px;
+    margin:0px;
+}
+.first{
+    display:flex;
+    gap:130px;
+   
+}
+
+.container{
+    display:flex;
+    flex-direction:column;
+
+}
+.name{
+    font-size:50px;
+    font-family: Montserrat Julieta Ulanovsky;
+    padding:8% 0px 30px 15%;
+    text-align: center; 
+   }
+.link{
+    padding:5px 10px 0px 120px;  
+    display:flex;
+    gap:55px;
+}
+.pics{
+    display:flex;
+    flex-direction:column;
+}
+.pics a{
+    text-decoration:none; 
+    font-size:25px;
+    transition:color 0.3s ease;
+}
+   
+.pics a:hover{
+    color:rgb(165, 42, 52);
+}
+.im{
+   padding-top: 40px;
+ }
+    
+
+/*----------About me------------>*/
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;  
+    align-items: center;  
+    justify-content: center;  
+    padding: 40px; 
+}
+
+.ima img {
+    border-radius: 50%;  
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  
+    
+    object-fit: cover;  
+}
+
+.cont h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.para {
+    max-width: 600px;  
+    font-size: 18px;
+    line-height: 1.6;  
+    padding: 0; 
+}
+
+/*...........Skills..........*/
+#Skills h1{
+ margin-left:40%;
+}
+.skill{
+    display:flex;
+    gap:50px;
+    margin:40px 100px 0px 60px;
+}
+.indi{
+    box-shadow: -20px 2px 14px 0px #444141;
+    border-radius: 6px;
+    padding:20px 20px 20px 20px;
+    width:20%;
+    cursor:pointer;  
+}
+.box{
+    display:flex;
+    flex-direction:column;
+
+}
+ul{
+    flex-grow: 1;
+}
+.indi:hover{
+    box-shadow: -27px 5px 143px 0px rgb(199, 196, 193);
+}
+
+/*............Education.........*/
+.double{
+    display:flex;
+   margin-top: 80px;
+   border: 1px solid black;
+   border-radius: 10px;
+}
+#Education{
+padding:40px 80px 40px 40px;
+border-right: 1px solid black;
+}
+.edu{
+    padding-top: 35px;
+    display:flex;
+}
+.years{
+    display:flex;
+    flex-direction: column;
+    padding:40px 40px 0px 30px;
+    gap:60px;
+    font-size:45px;
+}
+
+#Projects{
+    padding:40px 60px 40px 80px;
+    
+}
+.pro{
+    padding:30px;
+}
+.pro1{
+    display:flex;
+    flex-direction: column;
+   
+}
+.list{
+ padding:10px;
+}
+
+/*................Contact..............*/
+h2{
+    margin:20px;
+    font-size: 30px;
+}
+span{
+    margin-bottom: 35px;
+    padding:15px 0px 12px 0px;
+}
+.co{
+    font-size:50px;
+   margin-left:550px;
+}
+#Contacts{
+  display:flex;
+}
+.mycontact{
+    display:flex;
+    flex-direction: column;
+     margin-left:400px;
+    flex-basis: 30%;
+}
+.linku img{
+    width: 30px;
+    height:30px;
+    pointer:cursor;
+    padding:0px 5px 0px 25px;
+}
+.mycontact img:hover{
+    color:rgb(208, 33, 33);
+    transform:translateY(-5px);
+}
+
+form.others {
+    max-width: 1000px;
+    padding: 20px;
+    background-color: #f4f4f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(154, 79, 79, 0.1);
+}
+
+form.others .labs label {
+    display: block;
+    margin-bottom: 5px;
+}
+.labs{
+    padding-bottom: 15px;
+    font-weight: bold;
+}
+.btn{
+    margin: 50px 0px 0px 44px;
+    
+    justify-content: center;
+}
+.mycontact .btn{
+    width:100px;
+    height:40px;
+    border-radius:5px;
+    margin-top: 20px;
+    background-color: rgb(154, 200, 162);
+}
+.btn:hover{
+    background-color:rgb(154, 200, 162);
+}
+/*.........foot..........*/
+.foot{
+background-color: aquamarine;
+padding:10px;
+text-align:center;
+margin-top: 20px;
+}
+
+
+
+
