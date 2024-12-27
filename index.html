@@ -11,37 +11,33 @@
    
     <main>
         <section>
-            <div id="me">
-                
-            <div class="first">
-                <div class="container">
-                    <h1>Portfolio</h1> 
-                    <div class="name">
+            <div class="centered">
+                    <div class="container" id="me" >
+                        <h6>Portfolio</h6>
+                       
+                        <div class="name">
                         <p>Hello!</p>
-                        <p>I'm Bekkam Swathi</p>
+                        <p class="animated-name">I'm Bekkam Swathi</p>
+                        </div>
+                        <div class="link">
+                        <div class="pics"><img src="Images/about.png"width="70px" height="70px">
+                            <a href="#AboutMe">AboutMe</a></div>
+                        <div class="pics"><img src="Images/book.png"width="100px" height="70px">
+                            <a href="#Education">Education</a></div>
+                        <div class="pics"><img src="Images/skills.png"width="70px" height="70px">
+                            <a href="#Skills">Skills</a></div>
+                        <div class="pics"><img src="Images/project.png"width="70px" height="70px">
+                            <a href="#Projects">Projects</a> </div>  
+                        <div class="pics"><img src="Images/contact.png"width="70px" height="70px">
+                            <a href="#Contacts">Contact</a></div> 
                     </div>
-                    <div class="link">
-                    <div class="pics"><img src="Images/about.png"width="70px" height="70px">
-                        <a href="#AboutMe">AboutMe</a></div>
-                    <div class="pics"><img src="Images/book.png"width="100px" height="70px">
-                        <a href="#Education">Education</a></div>
-                    <div class="pics"><img src="Images/skills.png"width="70px" height="70px">
-                        <a href="#Skills">Skills</a></div>
-                    <div class="pics"><img src="Images/project.png"width="70px" height="70px">
-                      <a href="#Projects">Projects</a> </div>  
-                    <div class="pics"><img src="Images/contact.png"width="70px" height="70px">
-                        <a href="#Contacts">Contact</a></div>
-                      
                     </div>
-                </div>
-
-                <div class="im">
-                    <img src="Images/swathi.jpeg" height="350" width="290">
-                </div>
-            </div>
+                
             </div>
         
         </section>
+
+        
         <section id="AboutMe">
             <div class="about">
                 
@@ -59,96 +55,118 @@
         </section>
 
         <section id="Skills">
-        <h1>Skills</h1>
-           <div class="skill">
-            <div class="indi">
-                
-                <h2>Languages</h2>
-                <ul>
-                    <li>Java</li>
-                    <li>C</li>
-                    <li>python</li>
-                    
-                </ul>
+            <div class="skills-header">
+              <h1>Skills</h1>
+              <div class="skills-controls">
+                <button id="prev">⟨</button>
+                <button id="pause">❚❚</button>
+                <button id="next">⟩</button>
+              </div>
             </div>
-            <div class="indi">
-                <h2>FrontEnd</h2>
-                <ul>
-                    <li>Html</li>
-                    <li>Css</li>
-                    <li>Javascript</li>
-                </ul>
-            </div>
-            <div class="indi">
-                <h2>Databases</h2>
-                <ul>
-                    <li>Sql</li>
-                    <li>DBMS</li>
-                </ul>
-            </div>
-            <div class="indi">
-                <h2>Computer Fundamentals</h2>
-                <ul>
-                    <li>OOPs</li>
-                    <li>DataStructures</li>
-                    <li>Computer Networking</li>
-                </ul>
-            </div>
-           </div>
-        </section>
-
-        
-            <div class="double">
-                <div id="Education">
-                    <h1>Education</h1>
-                    <div class="edu">
-                    <div class="years">
-                        <div>2018 </div>
-                        <div>2020 </div>
-                        <div>2024</div>
-                        </div>
-                        <div class="details">
-                        <h5>KRISHNAVENI TALENT SCHOOL</h5>
-                        <p>Board of Seconday Education<br><br>CGPA:9.8</p>
-                        <h5>TSWRS JR COLLEGE</h5>
-                        <p>Board of Intermediate Education<br><br>Percentage:94.5</p>
-                        <h5>GOKARAJU RANGARAJU INSTITUTE OF ENGINEERING AND TECHNOLODY</h5>
-                        <p>Computer Science and Engineering<br><br>CGPA:8.68</p>
-                        </div>
-                        </div>
+            <div class="carousel">
+              <div class="carousel-track">
+                <div class="carousel-item">
+                  <img src="Images/java.png" alt="Java" />
+                  <p>Java</p>
                 </div>
-                
-                <div id="Projects">
-                    <h1>Project</h1>
-                    <div class="pro">
-                        <div class="pro1">
-                              <h3>Renew Books(An Online E-commerce Website)</h3>
-                              <ul>
-                                <li class="list">Developed a user-friendly frontend for a book renewal platform using html and css, 
-                                    enabling users to buy and sell used books at affordable prices.
-                                </li>
-                                <li class="list">
-                                    Designed a responsive and interactive interface, ensuring seamless navigation and 
-                                    enhanced user experience across various devices
-                                </li>
-                              </ul>
-                        </div>
-                        <div class="pro1">
-                            <h3>SQL-Based Data Encryption and Access Control Implementation</h3>
-                            <ul>
-                              <li class="list">Developed a robust application to evaluate material testing data of alloys, ensuring product quality by comparing
-                                against predefined threshold values.
-                              </li>
-                              <li class="list">
-                                Utilized SQL databases in material testing processes, resulting in a 75% reduction in data entry errors while
-                                upholding transparency and integrity in transactions.
-                              </li>
-                            </ul>
-                      </div>
+                <div class="carousel-item">
+                  <img src="Images/C.png" alt="C" />
+                  <p>C</p>
+                </div>
+                <div class="carousel-item">
+                  <img src="Images/python.jpeg" alt="Python" />
+                  <p>Python</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/ds.jpeg" alt="datastructues" />
+                    <p>Data Structures</p>
+                  </div>
+                <div class="carousel-item">
+                  <img src="Images/html.png" alt="HTML" />
+                  <p>HTML</p>
+                </div>
+                <div class="carousel-item">
+                  <img src="Images/css.png" alt="CSS" />
+                  <p>CSS</p>
+                </div>
+                <div class="carousel-item">
+                  <img src="Images/mysql.png" alt="MySQl" />
+                  <p>MYSQL</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/git.png" alt="github" />
+                    <p>Github</p>
+                  </div>
 
+                
+              </div>
+            </div>
+          </section>
+        
+          <script src="script.js"></script>
+
+        <<section id="Education">
+            <h1 class="section-title">Education</h1>
+            <div class="education-timeline">
+                <div class="education-item animate-fade">
+                    <div class="year">2018</div>
+                    <div class="education-content">
+                        <h3>KRISHNAVENI TALENT SCHOOL</h3>
+                        <p>Board of Secondary Education</p>
+                        <p><strong>CGPA:</strong> 9.8</p>
+                    </div>
+                </div>
+                <div class="education-item animate-fade">
+                    <div class="year">2020</div>
+                    <div class="education-content">
+                        <h3>TSWRS JR COLLEGE</h3>
+                        <p>Board of Intermediate Education</p>
+                        <p><strong>Percentage:</strong> 94.5%</p>
+                    </div>
+                </div>
+                <div class="education-item animate-fade">
+                    <div class="year">2024</div>
+                    <div class="education-content">
+                        <h3>GOKARAJU RANGARAJU INSTITUTE OF ENGINEERING AND TECHNOLOGY</h3>
+                        <p>Computer Science and Engineering</p>
+                        <p><strong>CGPA:</strong> 8.68</p>
                     </div>
                 </div>
             </div>
+        </section>
+        
+        <section id="Projects">
+            <h1>Projects</h1>
+            <div class="projects-grid">
+              <!-- Project Card 1 -->
+              <div class="project-card">
+                <img src="Images/renew.jpeg" alt="Project 1" class="project-image">
+                <div class="project-content">
+                  <h3>Renew Books</h3>
+                  <a href="https://swathi-bekkam.github.io/renew-books./" class="project-arrow">→</a>
+                </div>
+              </div>
+          
+              <!-- Project Card 2 -->
+              <div class="project-card">
+                <img src="Images/sql.jpeg" alt="Project 2" class="project-image">
+                <div class="project-content">
+                  <h3>SQL-Based Data Encryption</h3>
+                  <a href="https://github.com/Swathi-bekkam/blockchain1.git" class="project-arrow">→</a>
+                </div>
+              </div>
+          
+              <!-- Add more project cards as needed -->
+              <div class="project-card">
+                <img src="Images/chatappli.png" alt="Project 3" class="project-image">
+                <div class="project-content">
+                  <h3>Chat Application</h3>
+                  <a href="https://github.com/Swathi-bekkam/java-projects.git" class="project-arrow">→</a>
+                </div>
+              </div>
+            </div>
+          </section>
+          
 
            <p class="co">Let's Connect</p>
         <section id="Contacts">
