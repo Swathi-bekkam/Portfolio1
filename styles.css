@@ -1,40 +1,35 @@
 body{
-    margin:30px;
+    margin:0px;
     padding:0;
-    font-family: 'Montserrat', sans-serif;
-
+    font-family: 'Poppins', sans-serif;
+    background-image: url(Images/erased.jpg);
+    background-size: cover;
+    background-size: cover;
 }
 
-/* General Section Styling */
-.centered {
-    padding: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Full viewport height for centering */
-    background-color: #f9f9f9; /* Optional background color */
-    position: relative; /* Enable positioning for child elements */
+.hom h1{
+    position: fixed;
+    margin:0px;
+    padding:13px;
+    font-size: 40px;
+    background-color: rgb(231, 230, 217);
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(60, 208, 119, 0.1);
+    border-bottom-right-radius: 30px;
 }
-
-/* Portfolio Heading */
-h6 {
-    position: absolute; /* Position the heading independently */
-    top: 20px; /* Adjust the vertical position */
-    left: 20px; /* Adjust the horizontal position */
-    font-size: 50px;
-    margin: 0;
-    font-family: "Montserrat", sans-serif;
+.hom a{
+    text-decoration: none;
 }
-
-/* Container styling */
 .container {
     text-align: center;
+    padding:200px 0px 160px 0px ;
 }
 
 /* Name Styling */
 .name {
     font-size: 60px;
-    font-family: "Montserrat", sans-serif;
+    font-family:Georgia, "Times New Roman", Times, serif;
     margin-bottom: 80px;
 }
 
@@ -63,46 +58,56 @@ h6 {
     text-decoration: none;
     font-size: 30px;
     transition: color 0.3s ease;
-    color: rgb(48, 36, 213);
+    color: rgb(115, 113, 144);
 }
 
 .pics a:hover {
-    color: rgb(165, 42, 52);
+    color: rgb(198, 57, 57);
 }
 
 
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
-    h1 {
-        font-size: 35px;
-        top: 15px;
-        left: 15px;
+    .hom h1{
+       margin:0px;
+        padding:10px;
+        font-size: 20px;
+       
     }
+    .container{
+        padding-top:100px;
+    }
+    .name{
+    font-size: 30px;
+}
 
-    .name {
-        font-size: 35px;
-    }
+.pics img {
+    width: 50px;
+    height: 50px;
+}
 
-    .pics img {
-        width: 60px;
-        height: 60px;
-    }
+.pics a {
+    font-size: 18px;
+}
 
-    .pics a {
-        font-size: 18px;
-    }
 }
 
 @media (max-width: 480px) {
-    h1 {
-        font-size: 28px;
-        top: 10px;
-        left: 10px;
+    .hom h1{
+    
+        margin:0px;
+        padding:10px;
+        font-size: 20px;
+       
+        
+    }
+    .container{
+        padding-top:90px;
     }
 
     .name {
-        font-size: 28px;
+        font-size: 30px;
     }
 
     .pics img {
@@ -111,21 +116,19 @@ h6 {
     }
 
     .pics a {
-        font-size: 16px;
+        font-size: 18px;
     }
 }
-
-
-
 
 /*----------About me------------>*/
 .about {
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;  
-    padding:0px 50px 0px 50px;
+    gap: 80px;  
     align-items: center;  
-    justify-content: center;  
+    justify-content: center; 
+    padding:50px 0px 0px 0px;
+    
 }
 
 .ima img {
@@ -136,14 +139,14 @@ h6 {
 
 .cont h1 {
     font-size: 36px;
-    margin-bottom: 20px;
+    color:#333;
     margin-top:-40px;
 }
 
 
 .para {
-     max-width: 600px; /* Restrict the paragraph width for readability */
-    font-size: 18px;
+     max-width: 770px; /* Restrict the paragraph width for readability */
+    font-size: 23px;
     line-height: 1.6; /* Adjust line height for better spacing */
     text-align: justify; /* Justify text alignment */
     margin: 0; /* Remove extra margins */
@@ -160,20 +163,21 @@ h6 {
         font-size: 28px; /* Adjust heading size for smaller screens */
     }
 
+    
     .para {
-        font-size: 16px; /* Adjust paragraph font size for smaller screens */
-    }
+        max-width: 770px; /* Restrict the paragraph width for readability */
+       font-size: 18px;
+       font-weight: 50%;
+       line-height: 1.6; /* Adjust line height for better spacing */
+       text-align: justify; /* Justify text alignment */
+       margin: 0; /* Remove extra margins */
+       padding: 10px 20px 0px 20px; 
+   }
 }
 /*...........Skills..........*/
-/* General Styling */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
   
   #Skills {
-    padding: 20px;
+    padding: 100px;
     text-align: center;
   }
   
@@ -182,25 +186,26 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 100px;
+    gap: 200px;
     margin:80px 0px 60px 0px;
   }
   
   .skills-header h1 {
     font-size: 40px;
     margin: 0;
+    color:#333;
   }
   
   .skills-controls {
     display: flex;
-    gap: 8px;
+    gap: 10px;
   }
   
   .skills-controls button {
     
     color: rgb(11, 3, 3);
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 10px 15px;
     cursor: pointer;
     font-size: 1em;
@@ -217,13 +222,16 @@ body {
     width: 80%;
     margin: 0 auto;
     overflow: hidden;
+    white-space:nowrap;
   }
   
   .carousel-track {
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    width:max-content;
+    
+    transition: transform 0.5s ease-in-out; /* Smooth transition */
   }
-  
+
   .carousel-item {
     min-width: 200px;
     margin: 0 10px;
@@ -242,31 +250,30 @@ body {
     font-size: 1em;
   }
   
-  /* Carousel Buttons */
-  .carousel-controls button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    border-radius: 50%;
-    padding: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .carousel-controls button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  
+
   #prev {
-    left: 10px;
+    left: 12px;
   }
   
   #next {
-    right: 10px;
+    right: 12px;
   }
+
+  @media (max-width: 768px) {
+   
+    .skills-header {
+       
+        gap: 80px;
+        margin:80px 0px 60px 0px;
+      }
+      .carousel {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        white-space:nowrap;
+      }
+}
   
 
 /*............Education.........*/
@@ -305,7 +312,7 @@ body {
 
 .education-item {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     margin-bottom: 50px;
     position: relative;
@@ -313,6 +320,7 @@ body {
 
 .education-item:nth-child(odd) {
     flex-direction: row-reverse;
+
 }
 
 .education-item .year {
@@ -334,12 +342,14 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     max-width: 400px;
     text-align: left;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .education-item:nth-child(odd) .education-content {
+  
     text-align: right;
 }
+
 
 .education-content h3 {
     font-size: 1.6em;
@@ -468,36 +478,44 @@ body {
 /*................Contact..............*/
 .co {
     
-    font-size: 50px;
+    font-size: 60px;
     text-align: center;
-    margin-top: 50px;
+    margin: 0px;
+    margin:150px 0px 100px 0px;
+font-style: italic;
+color:#333;
 }
-
+.co span{
+    background-color: #fff;
+    border-radius: 20px;
+    padding:10px;
+}
 #Contacts {
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
     justify-content: center;
-    padding: 10px;
-    gap: 20px;
+    gap:100px;
+    margin:50px 0px 50px 0px;
 }
 
 .mycontact {
-    flex: 1;
-    min-width: 300px;
-    text-align: center;
-    padding: 20px;
+  background-color: #fff;
+      border-radius: 10px;
+    min-width: calc(20% - 10px);    
+    padding: 50px 10px 10px 10px;
 }
 
 .mycontact h2 {
     font-size: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 
 .mycontact span a {
-    color: #333;
+    color: #141111;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     
 }
 
@@ -521,7 +539,7 @@ body {
     height: 40px;
     border: none;
     border-radius: 5px;
-    margin-top: 20px;
+    margin-top: 25px;
     background: linear-gradient(45deg, #66cc99, #33ccff);
     color: white;
     font-weight: bold;
@@ -536,7 +554,7 @@ body {
 form.others {
     flex: 1;
     min-width: 300px;
-    max-width: 600px;
+    max-width: 700px;
     background: white;
     padding: 20px;
     border-radius: 10px;
@@ -545,6 +563,8 @@ form.others {
 
 form.others .labs {
     margin-bottom: 15px;
+    display:flex;
+    gap:30px;
 }
 
 form.others label {
@@ -580,18 +600,21 @@ form.others textarea:focus {
 /* Media Queries */
 @media (max-width: 768px) {
     .co {
-        font-size: 40px;
+        font-size: 25px;
+        margin:80px 0px 0px 0px;
     }
 
     #Contacts {
         flex-direction: column;
         align-items: center;
     }
-
-    .mycontact {
-        margin-bottom: 20px;
+form.others{
+    margin:0px 15px 0px 15px;
+}
+    .mycontact{
+        margin-top:30px;
+        padding-bottom: 40px;
     }
-
     .btn {
         width: 100px;
         height: 40px;
